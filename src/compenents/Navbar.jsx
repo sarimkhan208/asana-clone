@@ -5,9 +5,9 @@ import {RxHamburgerMenu} from 'react-icons/rx'
 import {BsArrowRight} from 'react-icons/bs'
 import {CgTemplate} from 'react-icons/cg'
 import {AiFillQqSquare} from 'react-icons/ai'
-import TitleCompoWithIcon from './TitleCompoWithIcon'
-import TitleCompo from './TitleCompo'
-import HeadingInsideHamburger from './HeadingInsideHamburger'
+import TitleCompoWithIcon from './navbarComponents/TitleCompoWithIcon'
+import TitleCompo from './navbarComponents/TitleCompo'
+import HeadingInsideHamburger from './navbarComponents/HeadingInsideHamburger'
 import {LuStars} from 'react-icons/lu'
 import {LiaNetworkWiredSolid} from 'react-icons/lia'
 import {CiViewTimeline} from 'react-icons/ci'
@@ -34,7 +34,7 @@ const Navbar = () => {
 
     const [productOpen,setProductOpen] = useState(false)
     const [solutionOpen,setSolutionOpen] = useState(false)
-    const [resourcesOpen,setResourcesOpen] = useState(true)
+    const [resourcesOpen,setResourcesOpen] = useState(false)
 
     const productToggle = () =>{
         setProductOpen(!productOpen)
