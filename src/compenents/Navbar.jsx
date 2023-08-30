@@ -169,11 +169,12 @@ const Navbar = () => {
 
 
 
-
+        <Link to='/blogs' >
         <div className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
             <div>Resources</div>
             <div className={`transition-transform transform ease-in-out duration-300 ${whyasana ? 'rotate-180' : ''} text-[#EEEBEA]`} >{<TbChevronDown/>}</div>
         </div>
+        </Link>
         <div className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
             <div>Enterprice</div>
         </div>

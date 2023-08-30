@@ -3,7 +3,7 @@ import BlogsCard from '../compenents/BlogsCard'
 
 const Blogs = () => {
   return (
-    <div className='bg-[#F8F8F9] grid grid-cols-3 gap-6 p-[50px] mt-[50px]' >
+    <div className='bg-[#F8F8F9] grid grid-cols-1 mx-auto laptop:grid-cols-3 gap-6 p-[50px] mt-[50px]' >
       {
         arr.map((el)=>(
             <BlogsCard title={el.title} desc={el.desc} image={el.image} date={el.date} />

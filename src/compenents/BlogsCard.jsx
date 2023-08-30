@@ -1,8 +1,10 @@
 import React from 'react'
 import {FaRegComment} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const BlogsCard = ({image,title,desc,date}) => {
   return (
+    <Link to='singleblog' >
     <div className='rounded-t-md bg-white p-[20px] cursor-pointer'>
         <div >
             <img  src={image} alt="" />
@@ -28,6 +30,7 @@ const BlogsCard = ({image,title,desc,date}) => {
         </div>
 
     </div>
+    </Link>
     
   )
 }
