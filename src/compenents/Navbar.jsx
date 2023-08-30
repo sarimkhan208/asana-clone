@@ -91,7 +91,7 @@ const Navbar = () => {
         
         <div onClick={()=>setWhyasana(!whyasana)} className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
             <div>Why Asana?</div>
-            <div  className={`transition-transform transform ease-in-out duration-300 ${whyasana ? 'rotate-180' : ''} text-[#EEEBEA]`} >{<TbChevronDown/>}</div>
+            <div  className={`transition-transform transform ease-in-out duration-300 ${whyasana ? 'rotate-180' : ''} text-black`} >{<TbChevronDown/>}</div>
         </div>
         
         {/* INSIDE CONTENT OF WHY ASANA */}
@@ -143,7 +143,7 @@ const Navbar = () => {
 
         <div onClick={()=>setFeatures(!features)} className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
             <div>Features</div>
-            <div className={`transition-transform transform ease-in-out duration-300 ${features ? 'rotate-180' : ''} text-[#EEEBEA]`} >{<TbChevronDown/>}</div>
+            <div className={`transition-transform transform ease-in-out duration-300 ${features ? 'rotate-180' : ''} text-black`} >{<TbChevronDown/>}</div>
         </div>
 
         {/* INSIDE CONTENT OF FEATURES */}
@@ -171,7 +171,7 @@ const Navbar = () => {
 
 
         <Link to='/blogs' >
-        <div className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
+        <div onClick={()=>setMenuOpen(!menuOpen)} className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
             <div>Resources</div>
             <div className={`transition-transform transform ease-in-out duration-300 ${whyasana ? 'rotate-180' : ''} text-[#EEEBEA]`} >{<TbChevronDown/>}</div>
         </div>
