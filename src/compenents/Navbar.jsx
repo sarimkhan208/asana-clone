@@ -55,8 +55,8 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='fixed top-0  h-[60px] w-[100%] px-[15px] tablet:px-[30px] laptop:px-[60px]  flex items-center bg-[#FFFFFF] ' >
-        <img src="/asanalogo.svg" />
+    <div className='z-10 fixed top-0  h-[60px] w-[100%] px-[15px] tablet:px-[30px] laptop:px-[60px]  flex items-center bg-[#FFFFFF] ' >
+        <Link to='/' ><img src="/asanalogo.svg" /></Link>
         <div className='ml-[60px] hidden laptop:flex ' >
             <div onClick={productToggle} className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Product <span className={`transition-transform transform ease-in-out duration-300 ${productOpen ? 'rotate-180 mb-1' : 'mt-1'}  ml-[2px] text-[12px]`}>{<TbChevronDown/>}</span></div>
             <div onClick={solutionToggle} className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Solution <span className={`transition-transform transform ease-in-out duration-300 ${solutionOpen ? 'rotate-180 mb-1' : 'mt-1'}  ml-[2px] text-[12px]`}>{<TbChevronDown/>}</span></div>
@@ -87,7 +87,8 @@ const Navbar = () => {
 
 
     {/* HAMBURGER INSIDE CONTENT */}
-    <div className={`${menuOpen?'top-[60px]':'-top-full'} bg-white laptop:hidden  absolute ease-in-out duration-500 px-[15px]`}>
+    <div className={`${menuOpen?'top-[60px] fixed':'-top-full absolute'} bg-white laptop:hidden   ease-in-out duration-500 px-[15px] py-[20px]`}>
+        
         <div onClick={()=>setWhyasana(!whyasana)} className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
             <div>Why Asana?</div>
             <div  className={`transition-transform transform ease-in-out duration-300 ${whyasana ? 'rotate-180' : ''} text-[#EEEBEA]`} >{<TbChevronDown/>}</div>
