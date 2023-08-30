@@ -1,0 +1,37 @@
+/* .scroll-smooth {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  } */
+
+  /* .car{
+    background-color: black;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  } */
+
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.car {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: slide 80s linear infinite; /* Adjust timing as needed */
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.car:hover .slider {
+    animation-play-state: paused;
+}
