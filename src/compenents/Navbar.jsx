@@ -75,13 +75,13 @@ const Navbar = () => {
             Get Started
         </button>
 
-        {/* <div onClick={()=>setMenuOpen(!menuOpen)} className='block laptop:hidden text-[22px] ml-[10px]' >{<RxHamburgerMenu/>}</div> */}
         
         <div className={`${menuOpen?'mx-[15px]':'ml-[20px]'} flex flex-col laptop:hidden `} onClick={()=>setMenuOpen(!menuOpen)} > 
             <span className={`h-[3px] w-[15px] bg-black mb-[2px] ${menuOpen?'rotate-45 absolute':''} ease-in-out duration-300`}></span>
             <span className={`h-[3px] w-[15px] bg-black mb-[2px] ${menuOpen?'-rotate-45 absolute':''} ease-in-out duration-300`}></span>
             <span className={`h-[3px] w-[15px] bg-black ${menuOpen?'hidden':''}  `}></span>
         </div>
+
     </div>
     
 
