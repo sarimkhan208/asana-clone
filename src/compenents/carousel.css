@@ -1,17 +1,4 @@
-/* .scroll-smooth {
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  } */
 
-  /* .car{
-    background-color: black;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  } */
 
   @keyframes slide {
     0% { transform: translateX(0); }
@@ -25,7 +12,7 @@
 
 .slider {
     display: flex;
-    animation: slide 80s linear infinite; /* Adjust timing as needed */
+    animation: slide 80s linear infinite; 
 }
 
 .slide {

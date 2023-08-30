@@ -7,13 +7,13 @@ import GetStartedEasily from '../compenents/GetStartedEasily'
 
 const Homepage = () => {
   return (
-    <>
+    <div>
         <MarketingCarousel/>
         <PrioritizeRevenueSection/>
         <ConnectYourTools/>
         <GetStartedEasily/>
         <Footer/>
-    </>
+    </div>
   )
 }
 

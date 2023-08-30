@@ -21,6 +21,7 @@ import {BsListTask} from 'react-icons/bs'
 import {MdOutlineWorkspacePremium} from 'react-icons/md'
 import {LuBuilding2} from 'react-icons/lu'
 import {BsBuilding} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 
 
@@ -54,12 +55,12 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='h-[60px] w-[100%] px-[15px] tablet:px-[30px] laptop:px-[60px]  flex items-center bg-[#FFFFFF] ' >
+    <div className='fixed top-0  h-[60px] w-[100%] px-[15px] tablet:px-[30px] laptop:px-[60px]  flex items-center bg-[#FFFFFF] ' >
         <img src="/asanalogo.svg" />
         <div className='ml-[60px] hidden laptop:flex ' >
             <div onClick={productToggle} className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Product <span className={`transition-transform transform ease-in-out duration-300 ${productOpen ? 'rotate-180 mb-1' : 'mt-1'}  ml-[2px] text-[12px]`}>{<TbChevronDown/>}</span></div>
             <div onClick={solutionToggle} className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Solution <span className={`transition-transform transform ease-in-out duration-300 ${solutionOpen ? 'rotate-180 mb-1' : 'mt-1'}  ml-[2px] text-[12px]`}>{<TbChevronDown/>}</span></div>
-            <div onClick={resourceToggle} className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Resources <span className={`transition-transform transform ease-in-out duration-300 ${resourcesOpen ? 'rotate-180 mb-1' : 'mt-1'}  ml-[2px] text-[12px]`}>{<TbChevronDown/>}</span></div>
+            <Link to='/blogs' ><div onClick={resourceToggle} className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Resources <span className={`transition-transform transform ease-in-out duration-300 ${resourcesOpen ? 'rotate-180 mb-1' : 'mt-1'}  ml-[2px] text-[12px]`}>{<TbChevronDown/>}</span></div></Link>
             <div className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Enterprise</div>
             <div className='flex mr-[30px] text-[#89806F] font-helvetica text-[14px] tracking-widest font-semibold cursor-pointer' >Pricing</div>
         </div>
@@ -73,7 +74,9 @@ const Navbar = () => {
         <button className='ml-auto tablet:ml-0 laptop:ml-0 text-[15px] font-helvetica tracking-widest font-bold bg-black text-white p-[8px] px-[14px] rounded-tablet hover:bg-[#F06A6A] hover:text-[black]' >
             Get Started
         </button>
+
         {/* <div onClick={()=>setMenuOpen(!menuOpen)} className='block laptop:hidden text-[22px] ml-[10px]' >{<RxHamburgerMenu/>}</div> */}
+        
         <div className={`${menuOpen?'mx-[15px]':'ml-[20px]'} flex flex-col laptop:hidden `} onClick={()=>setMenuOpen(!menuOpen)} > 
             <span className={`h-[3px] w-[15px] bg-black mb-[2px] ${menuOpen?'rotate-45 absolute':''} ease-in-out duration-300`}></span>
             <span className={`h-[3px] w-[15px] bg-black mb-[2px] ${menuOpen?'-rotate-45 absolute':''} ease-in-out duration-300`}></span>

@@ -23,7 +23,7 @@ const MarketingCarousel = () => {
     }
   return (
     <>
-    <div className='px-[20px] tablet:px-[20px]  laptop:px-[70px] py-[60px] flex justify-between bg-[#EEEBEA] laptop:bg-[#FFFFFF]' >
+    <div className='px-[20px] tablet:px-[20px]  laptop:px-[70px] py-[120px] flex justify-between bg-[#EEEBEA] laptop:bg-[#FFFFFF]' >
 
         {/* ABOUT MARKETING */}
         <div className='w-[100%] tablet:w-[100%] tablet:px-[100px] laptop:px-[10px] laptop:w-[40%] laptop:pl-[20px]' >
