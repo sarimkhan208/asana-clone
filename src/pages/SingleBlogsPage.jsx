@@ -3,10 +3,10 @@ import {FaRegComment} from 'react-icons/fa'
 
 const SingleBlogsPage = () => {
   return (
-    <div className='px-[280px] py-[60px] mt-[60px] font-helvetica' >
+    <div className=' px-[20px] laptop:px-[280px] py-[30px] laptop:py-[60px] mt-[60px] font-helvetica' >
 
         <p className='text-[12px] text-[#B9BCC0] font-helvetica font-semibold tracking-widest' >FEATURED</p>
-        <h1 className='text-[42px] my-[30px] text-black leading-[46px] font-helvetica font-semibold tracking-widest'>Want to amplify your organization’s productivity? Remember these three words.</h1>
+        <h1 className='text-[30px] laptop:text-[42px] my-[30px] text-black leading-[46px] font-helvetica font-semibold tracking-widest'>Want to amplify your organization’s productivity? Remember these three words.</h1>
     
         <div className='flex  mb-[20px] mr-[10px] text-gray-400'>By <span className='text-blue-400 mx-[10px]' >Nick Luchessi</span> OCT 12 2022  <span className='mt-[3px] ml-2'  >{<FaRegComment/>}</span></div>
 
