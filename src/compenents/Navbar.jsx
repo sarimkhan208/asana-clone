@@ -87,7 +87,7 @@ const Navbar = () => {
 
 
     {/* HAMBURGER INSIDE CONTENT */}
-    <div className={`${menuOpen?'top-[60px] fixed':'-top-full absolute'} bg-white laptop:hidden   ease-in-out duration-500 px-[15px] py-[20px]`}>
+    <div className={`${menuOpen?'top-[60px] fixed z-10 ':'-top-full absolute'} bg-white laptop:hidden   ease-in-out duration-500 px-[15px] py-[20px]`}>
         
         <div onClick={()=>setWhyasana(!whyasana)} className='flex justify-between text-[16px] font-bold font-helvetica tracking-wider border-b-[1px] border-[#EEEBEA] py-[10px]' >
             <div>Why Asana?</div>
@@ -95,7 +95,7 @@ const Navbar = () => {
         </div>
         
         {/* INSIDE CONTENT OF WHY ASANA */}
-            <div className={`${whyasana?'overflow-auto h-auto  mt-[10px] p-[10px]':'overflow-hidden h-0'}`} >
+            <div className={`${whyasana?'overflow-auto h-auto  mt-[10px] p-[10px] pb-[20px]':'overflow-hidden h-0'}`} >
                 <HeadingInsideHamburger title={'WHY ASANA'} fontSize={'12px'} />
 
                 {
@@ -148,7 +148,7 @@ const Navbar = () => {
 
         {/* INSIDE CONTENT OF FEATURES */}
 
-        <div className={`${features?'overflow-auto h-auto  mt-[10px] p-[10px]':'overflow-hidden h-0'}`} >
+        <div className={`${features?'overflow-auto h-auto  mt-[10px] p-[10px] ':'overflow-hidden h-0'}`} >
             <HeadingInsideHamburger title={'KEY FEATURES'} fontSize={'12px'} />
             
             {
